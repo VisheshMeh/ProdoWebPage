@@ -3,41 +3,45 @@
   padding: 0;
 }
 .first {
-  height: 500px;
-  background: url(https://s3.ap-south-1.amazonaws.com/prodo-files-upload/files/df48221e-53cf-4a2b-b00c-40d31eae7873-supplyChain.jpg)
+  height: 100%;
+  background: url(/df48221e-53cf-4a2b-b00c-40d31eae7873-supplyChain.jpeg)
     no-repeat center center/cover;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .first h2 {
-  width: 72%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Heebo", sans-serif;
   text-align: left;
+  margin-bottom: 15px;
 }
 .first p {
-  width: 80%;
   font-weight: 500;
   font-size: 20px;
+  width: 140px;
 }
+.first img {
+  margin-top: 20px;
+}
+
 #supplyChain {
-  width: 50%;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  left: -60px;
+  margin-bottom: 100px;
 }
-.supplyChain img {
-  width: 40px;
-}
+
 #form {
   border-style: none;
   border-radius: 8px;
   width: 334px;
   background-color: rgb(252, 251, 251);
   padding: 26px;
-  margin: 15px;
+  /* margin: 415px; */
   height: 345px;
-  margin-top: 118px;
+  /* margin-top: 118px; */
   display: flex;
   flex-direction: column;
 }
@@ -95,30 +99,9 @@
 .form-group label {
   display: block;
 }
-/* services section */
-/* #services {
-  margin: 34px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
 
-#services .box {
-  width: 48%;
-  border: 2px solid black;
-  padding: 14px;
-  margin: 2px 6px;
-  border-radius: 28px;
-  background-color: aliceblue;
-}
-
-#services .box .img {
-  height: 170px;
-  display: block;
-  margin: auto;
-} */
 .second {
-  margin-top: 272px;
+  margin-top: 180px;
   margin-left: 30px;
   margin-right: 30px;
   display: flex;
@@ -131,15 +114,35 @@
   margin-top: 68px;
 }
 .second h2 {
-  width: 800px;
+  width: 330px;
   font-weight: 400;
 }
 .second h3 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  margin-left: 10px;
 }
 .second p {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin-left: 20px;
 }
+
+#required {
+  width: 80%;
+  margin-top: 34px;
+  margin-left: 80px;
+  margin-right: 130px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+#required .box {
+  width: 80%;
+  padding: 15px;
+  margin: 2px 42px;
+  box-shadow: 0 6px 6px -6px rgb(74, 73, 73);
+}
+
 .third {
   display: flex;
   align-items: center;
@@ -157,41 +160,28 @@
   justify-content: center;
   text-align: center;
   font-weight: 300;
-  width: 600px;
+  width: 290px;
 }
-#required {
-  width: 80%;
-  margin-top: 34px;
-  margin-left: 80px;
-  margin-right: 130px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-#required .box {
-  width: 20%;
-  padding: 15px;
-  margin: 2px 24px;
-  box-shadow: 0 6px 6px -6px rgb(74, 73, 73);
-}
+
 #required1 {
   width: 80%;
   margin-top: 34px;
-  margin-left: 80px;
+  margin-left: 85px;
   margin-right: 130px;
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
 }
 #required1 .box {
-  width: 20%;
+  width: 25%;
   padding: 15px;
   margin: 2px 24px;
   box-shadow: 0 6px 6px -6px rgb(74, 73, 73);
 }
 .boxx {
-  margin: 42px;
-  width: 450px;
+  margin: 25px;
+  width: 300px;
   height: 315px;
   display: flex;
   flex-direction: column;
@@ -218,11 +208,11 @@
   margin-top: 10px;
 }
 
-/*section 4 */
 .upper {
   height: 25vh;
-  margin-top: 20px;
+  margin-top: 20vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -233,18 +223,19 @@
   margin-left: 40px;
 }
 .upper a {
-  margin-right: 115px;
+  margin-left: 30vw;
 }
 .upper .box3 {
-  width: 41%;
+  width: 55%;
 }
 .upper .box3 img {
   padding: 10px;
-  width: 14%;
-  margin-left: 30px;
+  width: 70%;
+  /* margin-left: 30px; */
 }
 .lower {
-  margin-top: 20px;
+  flex-direction: column;
+  margin-top: 15vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -252,20 +243,22 @@
 }
 .lower .box3 img {
   padding: 10px;
-  width: 14%;
+  width: 70%;
   margin-left: 30px;
 }
 .lower .box3 a {
-  margin-right: 85px;
+  margin-right: -5vw;
 }
 .box3 {
-  margin-top: 20px;
+  padding: 10%;
+  margin-top: 1vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 50px;
-  width: 30%;
+  height: 20vh;
+  width: 55%;
 }
 .four h1 {
   margin-top: 90px;
@@ -284,117 +277,4 @@
 .four a {
   font-weight: 400;
   font-family: "Heebo", sans-serif;
-}
-.five h3 {
-  margin-top: 155px;
-  font-size: 0.8rem;
-}
-.five h1 {
-  font-size: 2.3rem;
-}
-#accordion {
-  margin: 3vh auto;
-  width: 88%;
-}
-
-#accordion li {
-  list-style: none;
-  width: 100%;
-  margin-bottom: 10px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 4px;
-  border-bottom: dashed;
-  border-color: rgb(219, 216, 216);
-}
-
-#accordion li label {
-  font-family: "Heebo", sans-serif;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 4px;
-  margin: 4px;
-  color: black;
-}
-
-#accordion li label span {
-  transform: rotate(90deg);
-  font-size: 22px;
-}
-#accordion label + input[type="radio"] {
-  display: none;
-}
-#accordion .content {
-  padding: 0 10px;
-  line-height: 26px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s;
-}
-#accordion label + input[type="radio"]:checked + .content {
-  max-height: 400px;
-}
-.six {
-  width: 98vw;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.btn2 {
-  border-radius: 20px;
-  padding: 5px;
-  color: rgb(82, 159, 159);
-  background-color: white;
-  border: none;
-  width: 240px;
-  height: 40px;
-  font-weight: bold;
-}
-
-.six h1 {
-  margin-top: 30px;
-  margin-bottom: 4px;
-  color: white;
-  font-size: 2rem;
-  width: 350px;
-}
-
-.six p {
-  padding: 6px;
-  width: 400px;
-  margin: 8px;
-  margin-bottom: 16px;
-  color: white;
-  width: 90vw;
-}
-
-.six {
-  width: 100%;
-  background-color: rgb(19, 193, 193);
-  height: 80vh;
-  margin-bottom: 33vh;
-  margin-top: 27vh;
-}
-.h-primary {
-  font-size: 1.5rem;
-  padding: 12px;
-}
-.h-secondary {
-  font-size: 1.1rem;
-  padding: 12px;
-}
-.center {
-  text-align: center;
-}
-.quote {
-  width: 30px;
-  top: -30px;
-  position: relative;
 }
